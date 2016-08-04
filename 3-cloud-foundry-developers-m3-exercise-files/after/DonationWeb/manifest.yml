@@ -1,0 +1,5 @@
+---
+applications:
+- name: psdonationwebsite
+  memory: 128MB
+  instances: 1

@@ -1,0 +1,9 @@
+---
+applications:
+- name: psdonationpoller
+  memory: 128MB
+  instances: 1
+  command: node app.js
+  no-route: true
+services:
+- mymongo

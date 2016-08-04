@@ -1,0 +1,8 @@
+---
+applications:
+- name: psdonationwebservice
+  memory: 128MB
+  instances: 1
+  command: node ./bin/www
+services:
+- mymongo

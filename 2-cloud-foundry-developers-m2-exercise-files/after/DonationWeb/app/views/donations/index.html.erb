@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        Donation Nation
+      </a>
+    </div>	
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="/donations/new">Make Donation</a></li>
+      </ul>
+  </div>
+</nav>
+<div class="row">
+	<div class="col-md-2">&nbsp;</div>
+	<div class="col-md-8">
+		<blockquote>
+  		<p>Let's change the world. By giving other people our money.</p>
+  		<footer>Richard Seroter</footer>
+		</blockquote>
+	</div>
+	<div class="col-md-2">&nbsp;</div>
+</div>
+<div class="row">
+	<div class="col-md-2">&nbsp;</div>
+	<div class="col-md-8">
+
+			<h1><small>Donation History</small></h1>
+			<table class="table table-striped table-bordered table-hover">
+  			<tr>
+    				<th>DonorID</th>
+    				<th>Donor Name</th>
+    				<th>Donation Amount</th>
+  			</tr>
+			<% @donations.each do |donation| %>
+  				<tr>
+    					<td><%= donation.donorid %></td>
+    					<td><%= donation.donorname %></td>
+    					<td><%= donation.donationamount %></td>
+  				</tr>
+			<% end %>
+			</table>
+		
+	</div>
+	<div class="col-md-2">&nbsp;</div>
+</div>

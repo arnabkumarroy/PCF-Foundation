@@ -1,0 +1,6 @@
+---
+applications:
+- name: pshelloworld
+  memory: 64MB
+  instances: 1
+  command: node ./bin/www
